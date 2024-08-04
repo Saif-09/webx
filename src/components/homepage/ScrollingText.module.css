@@ -1,0 +1,79 @@
+/* components/ScrollingText.module.css */
+
+.tickerContainer {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 7.5rem;
+    /* 120px / 16 = 7.5rem */
+    background: linear-gradient(to right, rgba(76, 30, 79, 0.1), rgba(76, 30, 79, 0.3));
+    display: flex;
+    align-items: center;
+}
+
+.tickerContent {
+    display: flex;
+    align-items: center;
+    animation: ticker 20s linear infinite;
+}
+
+.tickerItem {
+    display: inline-flex;
+    /* Use inline-flex for proper alignment */
+    align-items: center;
+    /* Center SVG and text vertically */
+    padding: 0 1.25rem;
+    /* 20px / 16 = 1.25rem */
+    font-size: 2.125rem;
+    /* 34px / 16 = 2.125rem */
+    font-weight: 600;
+    line-height: 2.59rem;
+    /* 41.45px / 16 = 2.59rem */
+    color: #040411;
+}
+
+.icon {
+    margin-left: 2rem;
+    /* Add margin to space out the SVG */
+    width: 1.5rem;
+    /* Set a width for the SVG */
+    height: 1.5rem;
+    /* Set a height for the SVG */
+}
+
+.tickerContent:hover {
+    animation-play-state: paused;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .tickerContainer {
+        height: 3.125rem;
+        /* 50px / 16 = 3.125rem */
+    }
+
+    .tickerItem {
+        font-size: 0.875rem;
+        /* 14px / 16 = 0.875rem */
+        line-height: 1.067rem;
+        /* 17.07px / 16 = 1.067rem */
+    }
+
+    .icon {
+        width: 0.75rem;
+        /* Slightly smaller SVG for mobile */
+        height: 0.75rem;
+        margin-left: 1rem;
+        /* Adjust margin for mobile */
+    }
+}
