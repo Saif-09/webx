@@ -34,7 +34,7 @@ const WhatWeDo: React.FC = () => {
             <h2 className="text-sm font-medium text-gray-500 tracking-widest mb-2">
                 CATEGORY
             </h2>
-            <h1 className="text-4xl font-extrabold md:mb-12 text-gray-900">
+            <h1 className="text-2xl md:text-4xl font-extrabold md:mb-12 text-gray-900">
                 What we do?
             </h1>
 
@@ -98,7 +98,7 @@ const WhatWeDo: React.FC = () => {
                                         text-sm md:text-base
                                         leading-5 
                                         text-[#760A16] 
-                                        w-[90%] md:w-[477px] 
+                                        
                                     "
                                 >
                                     {service.description}

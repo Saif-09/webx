@@ -1,6 +1,7 @@
 // src/pages/index.js
 import Hero from '@/components/homepage/Hero';
 import HeroBG from '@/components/homepage/HeroBG';
+import ProjectSection from '@/components/homepage/ProjectSection';
 import ScrollingText from '@/components/homepage/ScrollingText';
 import WhatWeDo from '@/components/homepage/WhatWeDo';
 import { Herr_Von_Muellerhoff } from 'next/font/google';
@@ -12,6 +13,7 @@ export default function Home() {
             <Hero/>
             <ScrollingText />
             <WhatWeDo />
+            <ProjectSection/>
 
         </main>
     );
