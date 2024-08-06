@@ -4,7 +4,6 @@ import HeroBG from './HeroBG';
 import Image from 'next/image';
 import HomeUnderlineDecore from '@/../public/HomeUnderlineDecore.svg';
 
-
 const Hero: React.FC = () => {
     return (
         <HeroBG>
@@ -13,7 +12,7 @@ const Hero: React.FC = () => {
                     We Design & Develop Your Dream
                 </div>
                 <h1 className="text-[1.875rem] md:text-7xl lg:text-[5.25rem] font-extrabold text-[#040411] leading-tight mb-3 md:mb-10 uppercase">
-                    Let's <span className="relative inline-block">
+                    Let&apos;s <span className="relative inline-block">
                         <span className="relative z-10">Build</span>
                         <span className="absolute inset-x-0 md:bottom-1 h-2 bottom-0">
                             <Image
@@ -28,8 +27,8 @@ const Hero: React.FC = () => {
                     <br />
                     Amazing Together
                 </h1>
-                <p className="text-[#AA9BAB] text-[0.75rem] md:text-base mb-8 md:mb-[4.25rem] md:max-w-[29.813rem] max-w-[20.25rem]  ">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration or randomised words which don't look even slightly believable.
+                <p className="text-[#AA9BAB] text-[0.75rem] md:text-base mb-8 md:mb-[4.25rem] md:max-w-[29.813rem] max-w-[20.25rem]">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration or randomised words which don&apos;t look even slightly believable.
                 </p>
                 <div className="flex items-center space-x-4 mb-[2.75rem]">
                     <button
