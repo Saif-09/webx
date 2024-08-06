@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
                     Amazing Together
                 </h1>
                 <p className="text-[#AA9BAB] text-[0.75rem] md:text-base mb-8 md:mb-[4.25rem] md:max-w-[29.813rem] max-w-[20.25rem]">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration or randomised words which don&apos;t look even slightly believable.
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration or randomised words which don&apos;t look even slightly believable .
                 </p>
                 <div className="flex items-center space-x-4 mb-[2.75rem]">
                     <button
