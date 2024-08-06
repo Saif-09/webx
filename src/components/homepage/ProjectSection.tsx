@@ -40,7 +40,7 @@ const ProjectSection: React.FC = () => {
     };
 
     return (
-        <div className="bg-white min-h-screen py-10">
+        <div className="bg-white md:min-h-screen md:py-10 py-10">
             <div className="max-w-6xl mx-auto px-4">
                 <h1 className="md:text-[1.125rem] text-xs font-semibold text-center mb-1 text-[#5E6282]">Project</h1>
                 <h2 className="md:text-[3.125rem] text-2xl font-bold text-center md:mb-20 mb-10 text-[#14183E]">How we do it</h2>
