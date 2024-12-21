@@ -3,6 +3,7 @@ import Hero from '@/components/homepage/Hero';
 import HeroBG from '@/components/homepage/HeroBG';
 import ProjectSection from '@/components/homepage/ProjectSection';
 import ScrollingText from '@/components/homepage/ScrollingText';
+import TechStacks from '@/components/homepage/TechStacks';
 import Testimonials from '@/components/homepage/Testimonials';
 import WhatWeDo from '@/components/homepage/WhatWeDo';
 import WhyUs from '@/components/homepage/WhyUs';
@@ -15,6 +16,7 @@ export default function Home() {
             <Hero/>
             <ScrollingText />
             <WhatWeDo />
+            {/* <TechStacks/> */}
             <ProjectSection/>
             <WhyUs />
             <Testimonials/>

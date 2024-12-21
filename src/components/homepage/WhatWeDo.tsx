@@ -94,10 +94,10 @@ const WhatWeDo: React.FC = () => {
                 alt="rightStars"
                 className="h-auto w-[10.6vw] absolute right-10"
             />
-            <h2 className="text-xs md:text-sm font-medium text-gray-500 tracking-widest mb-2 text-left">
+            <h2 className="text-xs md:text-sm font-medium text-gray-500 tracking-widest mb-2 text-center">
                 CATEGORY
             </h2>
-            <h1 className="text-2xl md:text-4xl font-extrabold md:mb-12 text-gray-900 text-left mb-7">
+            <h1 className="text-2xl md:text-4xl font-extrabold md:mb-12 text-gray-900 text-center mb-7">
                 What we do?
             </h1>
 

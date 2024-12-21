@@ -12,10 +12,11 @@
     "@next/font": "^14.2.11",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^4.1.4",
+    "lucide-react": "^0.441.0",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.2.1"
+    "react-icons": "^5.3.0"
   },
   "devDependencies": {
     "@types/locomotive-scroll": "^4.1.3",

@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/common/header";
 
-const montserrat = Montserrat({ subsets: ["latin"], weight:['400', '500', '600', '700', '800','900','300','100', '200'] });
+const montserrat = Montserrat({ 
+  subsets: ["latin"], 
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  display: 'swap'
+});
 
 export const metadata: Metadata = {
   title: "WebX",
@@ -17,10 +22,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script strategy="lazyOnload" id="tawk-script">
+          {`
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+              s1.async=true;
+              s1.src='https://embed.tawk.to/6766a39baf5bfec1dbdf7c17/1ifkeu6ak';
+              s1.charset='UTF-8';
+              s1.setAttribute('crossorigin','*');
+              s0.parentNode.insertBefore(s1,s0);
+            })();
+          `}
+        </Script>
+      </head>
       <body className={montserrat.className}>
-        <Header/>
+        <Header />
         {children}
-        </body>
+      </body>
     </html>
   );
 }
